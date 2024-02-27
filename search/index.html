@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        form.example input[type=text]{
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 15%;
+            background: #f1f1f1;
+        }
+        form.example button {
+            float: left;
+            width: 5%;
+            padding: 10px;
+            background: rgb(74, 152, 242);
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+        form.example button:hover {
+            background: #0384ed;
+        }
+        table{
+            border-collapse: collapse;
+            height: auto;
+            border: 1px solid black;
+            width: 70%;
+            margin: auto;
+            margin-top: 10px;
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+        thead{
+            display: none;
+        }
+        #fetchedData{
+            display: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h2>Search Here</h2>
+    <form class="example">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    </div>
+    <div id="fetchedData">
+        <h2 id="errText" style="text-align: center;"></h2>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Actors</th>
+            <th>Ratings</th>
+            <th>Language</th>
+            <th>Genre</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
